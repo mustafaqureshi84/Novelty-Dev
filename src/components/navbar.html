@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novelty Ads Adgency</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/main.js"></script>
+</head>
+<body>
+    <div id="navbar-placeholder" class="bg-gradient-to-b from-purple-900 via-purple-800 to-black text-white">
+        <header class="absolute inset-x-0 top-0 z-50">
+          <nav class="flex items-center justify-between px-6 py-4 lg:px-24">
+            <div class="flex lg:flex-1">
+              <a href="#" class="text-2xl font-bold">Novelty <span class="text-indigo-300">Dev</span></a>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <div class="hidden lg:flex lg:gap-x-12">
+              <a href="work.html" class="text-lg font-medium hover:text-indigo-300">Work</a>
+              <a href="clients.html" class="text-lg font-medium hover:text-indigo-300">Clients</a>
+              <a href="services.html" class="text-lg font-medium hover:text-indigo-300">Services</a>
+              <a href="about.html" class="text-lg font-medium hover:text-indigo-300">About</a>
+              <a href="contact.html" class="text-lg font-medium hover:text-indigo-300">Contact</a>
+            </div>
+            <div class="hidden lg:flex lg:ml-12">
+              <a href="#" class="rounded-md bg-white px-4 py-2 text-sm font-semibold text-black hover:bg-gray-200">GET STARTED</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button id="menu-toggle" class="text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+          </nav>
+
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden lg:hidden flex flex-col gap-4 px-6 pt-4 pb-6 bg-purple-900">
+            <a href="#" class="text-lg font-medium hover:text-indigo-300">Work</a>
+            <a href="#" class="text-lg font-medium hover:text-indigo-300">Clients</a>
+            <a href="#" class="text-lg font-medium hover:text-indigo-300">Services</a>
+            <a href="#" class="text-lg font-medium hover:text-indigo-300">About</a>
+            <a href="#" class="text-lg font-medium hover:text-indigo-300">Contact</a>
+            <a href="#" class="rounded-md bg-white px-4 py-2 text-sm font-semibold text-black hover:bg-gray-200">GET STARTED</a>
+          </div>
+        </header>
+      
+        <div class="relative isolate px-6 pt-24 pb-24 lg:px-8">
+          <div class="text-center max-w-7xl mx-auto">
+            <h1 class="text-2xl font-semibold leading-tight sm:text-[4.5rem] font-bold">Make your website the best it can be with Novelty Dev</h1>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+              <a href="#" class="rounded-md bg-white px-6 py-3 text-base font-semibold leading-4 text-black hover:bg-gray-200">GET STARTED</a>
+              <a href="#" class="rounded-md border border-white px-6 py-3 text-base font-semibold leading-4 hover:bg-white hover:text-black">GET A DEMO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+    <script>
+      // Mobile menu toggle functionality
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    </script>
+
+</body>
+</html>
